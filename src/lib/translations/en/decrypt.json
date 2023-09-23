@@ -1,0 +1,16 @@
+{
+  "title": "Decrypting One-Time Link",
+  "subtitle": "OneLink is the best way to share secrets with others",
+  "fallback_text": "This secret may have expired or has been read already\n\nReminder: Once secrets have been read once, they are permanently destroyed 💥",
+  "legend": "💙 Thanks for using",
+  "decoder_title": {
+    "loading": "Decrypting secret...",
+    "success": "This is yout secret",
+    "error": "This one-time secret cannot be viewed"
+  },
+  "buttons": {
+    "copy_to_clipboard": "Copy the secret",
+    "copy_success_title": "Copied!",
+    "copy_success_message": "Secret copied to clipboard"
+  }
+}

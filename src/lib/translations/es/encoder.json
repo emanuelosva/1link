@@ -1,0 +1,16 @@
+{
+  "title": "Encripta un secreto",
+  "input_placeholder": "▶️ Escribe o pega un secreto que desees compartir...",
+  "expiration_label": "Expiración (días)",
+  "buttons": {
+    "encrypt": "Encripta y crea un link de una sola vista",
+    "share_new": "Compartir nuevo secreto",
+    "copy_to_clipboard": "Copiar el link",
+    "copy_success_title": "Copiado!",
+    "copy_success_message": "Link copiado al portapapeles"
+  },
+  "result": {
+    "title": "✨ Tu secreto ahora está disponible en la siguiente URL.",
+    "description": "Debes de compartir esta URL solamente con el destinatario.\nEste link expirará aproximadamente el: {{expirationDate}}"
+  }
+}

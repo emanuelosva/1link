@@ -1,0 +1,16 @@
+{
+  "title": "Encrypt a secret",
+  "input_placeholder": "▶️ Type or paste the secret you want to share...",
+  "expiration_label": "Expiration (days)",
+  "buttons": {
+    "encrypt": "Encrypt and create One Time Link",
+    "share_new": "Share new secret",
+    "copy_to_clipboard": "Copy the One Time Link",
+    "copy_success_title": "Copied!",
+    "copy_success_message": "Link copied to clipboard"
+  },
+  "result": {
+    "title": "✨ Your secret is now available on the below URL.",
+    "description": "You should only share this URL with the intended recipient.\nThis Link will expire aproximately at {{expirationDate}}"
+  }
+}

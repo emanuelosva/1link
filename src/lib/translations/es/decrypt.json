@@ -1,0 +1,16 @@
+{
+  "title": "Desencriptando Link único",
+  "subtitle": "OneLink es la mejor manera de compartir secretos con otros",
+  "fallback_text": "Este secreto ya ha sido visto o ha expirado\n\nRecuerda: Una vez vistos los secretos, son destruidos de manera permanente 💥",
+  "legend": "💙 Gracias por usar",
+  "decoder_title": {
+    "loading": "Desencriptando secreto...",
+    "success": "Este es tu secreto",
+    "error": "Este secreto no puede ser visto"
+  },
+  "buttons": {
+    "copy_to_clipboard": "Copia el secreto",
+    "copy_success_title": "Copiado!",
+    "copy_success_message": "Secreto copiado al portapapeles"
+  }
+}
