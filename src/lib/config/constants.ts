@@ -1,6 +1,9 @@
 export const SITE = {
   name: "1 Link",
   defaultTheme: "light",
+  url: process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : process.env.SITE_URL || "https://1link.vercel.app",
 } as const
 
 export const LINKS = {

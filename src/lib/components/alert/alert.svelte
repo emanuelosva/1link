@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Alert as AlertType, AlertLevel } from "./alert"
+  import type { Alert as AlertType } from "./alert"
   import * as Alert from "$lib/components/ui/alert"
   import { InfoIcon, ErrorIcon } from "$lib/components/icons"
 

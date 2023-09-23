@@ -3,7 +3,7 @@ import { randomUUID } from "node:crypto"
 import { z } from "zod"
 import { createMessage, encrypt } from "openpgp"
 import db from "$lib/db"
-import { COOKIES, ENCODER } from "$lib/config/constants"
+import { COOKIES, ENCODER, SITE } from "$lib/config/constants"
 import { addDays } from "$lib/date-fns"
 import { LOCALES, DEFAULT_LOCALE } from "$lib/translations"
 
@@ -47,7 +47,7 @@ export const actions: Actions = {
         data: { content: String(encrypted), expiration }
       })
 
-      const oneTimeLink = `${process.env.SITE_URL}/decrypt?ref=${secret.id}&otp=${linkPassword}`
+      const oneTimeLink = `${SITE.url}/decrypt?ref=${secret.id}&otp=${linkPassword}`
   
       return { success: true, oneTimeLink }
     } catch (error) {
