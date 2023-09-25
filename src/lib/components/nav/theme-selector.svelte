@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { onMount } from "svelte"
   import { COOKIES, SITE } from "$lib/config/constants"
 
   import { Button } from "$lib/components/ui/button"
@@ -19,10 +18,6 @@
     document.documentElement.classList.add(theme)
     localStorage.setItem(COOKIES.theme, theme)
   }
-
-  onMount(() => {
-    theme = localStorage.getItem(COOKIES.theme) || theme
-  })
 </script>
 
 <Button size="icon" class="text-white" on:click={changeTheme}>
