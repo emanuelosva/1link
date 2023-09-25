@@ -1,9 +1,10 @@
 import type { Actions } from "@sveltejs/kit"
-import { randomUUID } from "node:crypto"
 import { z } from "zod"
 import { createMessage, encrypt } from "openpgp"
 import db from "$lib/db"
-import { COOKIES, ENCODER, SITE } from "$lib/config/constants"
+import { id } from "$lib/id"
+import { COOKIES, ENCODER } from "$lib/config/constants"
+import { SERVER_SITE } from "$lib/config/server"
 import { addDays } from "$lib/date-fns"
 import { LOCALES, DEFAULT_LOCALE } from "$lib/translations"
 
@@ -38,16 +39,16 @@ export const actions: Actions = {
       const data = Object.fromEntries(formData)
       const { secretContent, expirationDays } = encryptedBodySchema.parse(data)
   
-      const linkPassword = randomUUID()
+      const linkPassword = id(10)
       const expiration = addDays(Date.now(), expirationDays).getTime()
   
       const message = await createMessage({ text: secretContent })  
       const encrypted = await encrypt({ message, passwords: [linkPassword] })
       const secret = await db.secrets.create({
-        data: { content: String(encrypted), expiration }
+        data: { id: id(), content: String(encrypted), expiration }
       })
 
-      const oneTimeLink = `${SITE.url}/decrypt?ref=${secret.id}&otp=${linkPassword}`
+      const oneTimeLink = `${SERVER_SITE.url}/decrypt?ref=${secret.id}&otp=${linkPassword}`
   
       return { success: true, oneTimeLink }
     } catch (error) {
