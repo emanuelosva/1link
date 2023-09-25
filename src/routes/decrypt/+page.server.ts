@@ -3,9 +3,16 @@ import { readMessage, decrypt } from "openpgp"
 import db from "$lib/db"
 import { sleepAndReturn } from "$lib/sleep"
 import { ENCODER } from "$lib/config/constants"
+import { isBrowserRequest } from "$lib/server"
 
 export const load: PageServerLoad = async ({ request }) => {
   const url = new URL(request.url)
+
+  // This prevents the message client used to share the link
+  // invalidates the OTL by previewing OG
+  if (!isBrowserRequest(request)) {
+    return {secret: { content: "" }}
+  }
 
   async function decryptSecret() {
     try {
