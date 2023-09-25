@@ -17,6 +17,9 @@ dependencies:
   lucide-svelte:
     specifier: ^0.274.0
     version: 0.274.0(svelte@4.2.0)
+  nanoid:
+    specifier: ^5.0.1
+    version: 5.0.1
   openpgp:
     specifier: ^5.10.1
     version: 5.10.1
@@ -29,6 +32,9 @@ dependencies:
   tailwind-variants:
     specifier: ^0.1.14
     version: 0.1.14(tailwindcss@3.3.3)
+  ua-parser-js:
+    specifier: ^1.0.36
+    version: 1.0.36
   zod:
     specifier: ^3.22.2
     version: 3.22.2
@@ -43,6 +49,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.5.9
     version: 20.5.9
+  '@types/ua-parser-js':
+    specifier: ^0.7.37
+    version: 0.7.37
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.15(postcss@8.4.29)
@@ -485,6 +494,10 @@ packages:
 
   /@types/pug@2.0.6:
     resolution: {integrity: sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==}
+    dev: true
+
+  /@types/ua-parser-js@0.7.37:
+    resolution: {integrity: sha512-4sOxS3ZWXC0uHJLYcWAaLMxTvjRX3hT96eF4YWUh1ovTaenvibaZOE5uXtIp4mksKMLRwo7YDiCBCw6vBiUPVg==}
     dev: true
 
   /acorn@8.10.0:
@@ -1008,6 +1021,12 @@ packages:
   /nanoid@4.0.2:
     resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
     engines: {node: ^14 || ^16 || >=18}
+    hasBin: true
+    dev: false
+
+  /nanoid@5.0.1:
+    resolution: {integrity: sha512-vWeVtV5Cw68aML/QaZvqN/3QQXc6fBfIieAlu05m7FZW2Dgb+3f0xc0TTxuJW+7u30t7iSDTV/j3kVI0oJqIfQ==}
+    engines: {node: ^18 || >=20}
     hasBin: true
     dev: false
 
@@ -1540,6 +1559,10 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
+
+  /ua-parser-js@1.0.36:
+    resolution: {integrity: sha512-znuyCIXzl8ciS3+y3fHJI/2OhQIXbXw9MWC/o3qwyR+RGppjZHrM27CGFSKCJXi2Kctiz537iOu2KnXs1lMQhw==}
+    dev: false
 
   /undici@5.23.0:
     resolution: {integrity: sha512-1D7w+fvRsqlQ9GscLBwcAJinqcZGHUKjbOmXdlE/v8BvEGXjeWAax+341q44EuTcHXXnfyKNbKRq4Lg7OzhMmg==}
