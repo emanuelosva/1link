@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "1 Link",
+  name: "1Link",
   defaultTheme: "light",
 } as const
 
