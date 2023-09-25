@@ -1,4 +1,8 @@
 {
+  "og": {
+    "title": "1Link",
+    "description": "Comparte secretos cifrados a través de una URL"
+  },
   "github": "Encuentra este proyecto en GitHub",
   "footer": {
     "madeBy": "Echo con 💙 por",

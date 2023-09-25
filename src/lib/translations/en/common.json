@@ -1,4 +1,8 @@
 {
+  "og": {
+    "title": "1Link",
+    "description": "Share end-to-end encrypted secrets with others via a one-time URL"
+  },
   "github": "Find this project on GitHub",
   "footer": {
     "madeBy": "Made with 💙 by",

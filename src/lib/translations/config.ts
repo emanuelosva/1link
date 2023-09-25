@@ -2,7 +2,7 @@ import type { Config } from "sveltekit-i18n"
 
 export const LOCALES = {
   EN: "en",
-  ES: "es",
+  ES: "es-MX",
 }
 
 export const LOCALE_KEYS = {
