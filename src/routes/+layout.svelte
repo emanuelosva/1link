@@ -13,7 +13,6 @@
   <title>{SITE.name}</title>
   <meta property="og:title" content={$t("common.og.title")} />
   <meta property="og:description" content={$t("common.og.description")} />
-  <meta property="og:image" content="%sveltekit.assets%/og.png" />
   <meta property="og:type" content="website" />
 </svelte:head>
 
