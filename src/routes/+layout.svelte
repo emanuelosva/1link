@@ -14,6 +14,7 @@
   <meta property="og:title" content={$t("common.og.title")} />
   <meta property="og:description" content={$t("common.og.description")} />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lin.vercel.app/og.png" />
 </svelte:head>
 
 <Nav />
